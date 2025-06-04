@@ -1,19 +1,18 @@
 
-  document.getElementById("contactForm").addEventListener("submit", function(e) {
+  document.getElementById('coworkingForm').addEventListener('submit', function (e) {
     e.preventDefault(); 
 
-    const name = document.getElementById("Nombre").value.trim();
-    const email = document.getElementById("Correo").value.trim();
-    const message = document.getElementById("Mensaje").value.trim();
+    const nombre = document.getElementById('nombre').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const telefono = document.getElementById('telefono').value.trim();
+    const interes = document.querySelector('input[name="interes"]:checked');
+    const personas = document.querySelector('input[name="personas"]:checked');
 
-   
-    if (!Nombre|| !Correo || !Mensaje) {
-      document.getElementById("response").innerText = "Por favor, completa todos los campos.";
+    if (!nombre || !email || !telefono || !interes || !personas) {
+      alert('Por favor, completa todos los campos obligatorios.');
       return;
     }
 
-    document.getElementById("response").innerText =
-      `Gracias, ${name}. Hemos recibido tu mensaje: "${message}"`;
-
-    document.getElementById("contactForm").reset();
-  });
+    alert('¡Formulario enviado correctamente!\n\nGracias por tu interés.');
+    document.getElementById('coworkingForm').reset();
+  });  

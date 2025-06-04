@@ -19,31 +19,58 @@
   </nav>
 </header>
 
-  <form class="form">
-    <h1 class="form_title">Contáctanos</h1>
+<form>
+  <div class="section">
+    <label for="nombre">Nombre*</label>
+    <input type="text" id="nombre" required>
 
-    <div class="form_container">
-      <div class="form_group">
-        <label for="name" class="form_label">Nombre:</label>
-        <input type="text" id="name" class="form_input" required>
-      </div>
+    <label for="email">E-mail*</label>
+    <input type="email" id="email" required>
 
-      <div class="form_group">
-        <label for="email" class="form_label">Correo:</label>
-        <input type="email" id="email" class="form_input" required>
-      </div>
+    <label for="telefono">Teléfono*</label>
+    <input type="tel" id="telefono" required>
+  </div>
 
-      <div class="form_group">
-        <label for="mensaje" class="form_label">Mensaje:</label>
-        <input type="text" id="mensaje" class="form_input" required>
-      </div>
-
-      <input type="submit" class="form_submit" value="Enviar">
+  <div class="section">
+    <label>Interesado en*</label>
+    <div class="options">
+      <label><input type="radio" name="interes" required> Coworking</label>
+      <label><input type="radio" name="interes"> Oficinas privadas</label>
+      <label><input type="radio" name="interes"> Salas de reuniones</label>
+      <label><input type="radio" name="interes"> Espacio para eventos (corporativo)</label>
+      <label><input type="radio" name="interes"> Espacio para eventos (particular)</label>
     </div>
-  </form>
+  </div>
 
+  <div class="section">
+    <label>Número de personas*</label>
+    <div class="options">
+      <label><input type="radio" name="personas" required> 1</label>
+      <label><input type="radio" name="personas"> 2-4</label>
+      <label><input type="radio" name="personas"> 5-8</label>
+      <label><input type="radio" name="personas"> 9-20</label>
+      <label><input type="radio" name="personas"> 20-35</label>
+      <label><input type="radio" name="personas"> 35-50</label>
+      <label><input type="radio" name="personas"> 50-99</label>
+      <label><input type="radio" name="personas"> 100+</label>
+    </div>
+  </div>
+
+    <label for="idioma">Idioma</label>
+    <select id="idioma">
+      <option>Castellano</option>
+      <option>Català</option>
+      <option>English</option>
+    </select>
+  </div>
+
+  <div class="section">
+    <button type="submit">Enviar</button>
+  </div>
+</form>
+ 
   <footer>
-    <h1> Haz tu vida más facil con nosotros</h1i>
+    <h1> Haz tu vida más facil con nosotros</h1>
   </footer>
 </body>
 </html>
